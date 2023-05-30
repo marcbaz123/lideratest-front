@@ -1,0 +1,80 @@
+.example-card {
+  width: 100%;
+  max-width: 400px; /* Ajusta el valor según tu preferencia */
+  margin: 0 20px;
+
+@media screen and (max-width: 600px) {
+  .example-card {
+    max-width: 100%;
+  }
+}
+}
+.example-card.mat-card-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según tus necesidades */
+}
+
+.example-card {
+  max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+body {
+  background: url('https://i.postimg.cc/KjrQdPzs/kisspng-leadership-management-clip-art-leadership-5ac627b19ec568-0524768715229357296503.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.centered-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Cambria, sans-serif;
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centered-title2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.transparent
+{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.custom-form-field {
+  max-width: 350px; /* Ajusta el valor según tu preferencia */
+  width: 100%;
+  margin: 0 auto;
+
+}
+.centered-htmltittle{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 20px; /* Aplica un margen de 20px en la parte superior */
+}
+  .a-text {
+margin: 15px;
+font-family: Arial, sans-serif;
+}
