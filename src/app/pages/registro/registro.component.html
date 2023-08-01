@@ -1,0 +1,49 @@
+<body>
+  <h1 class="centered-htmltittle">Lideratest</h1>
+  <div class="container">
+    <mat-card class="example-card">
+      <mat-card-header class="centered-title">
+        <mat-card-title>Registrarse</mat-card-title>
+      </mat-card-header>
+      <mat-form-field class="custom-form-field">
+        <mat-label>Nombre y Apellido</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="custom-form-field">
+        <mat-label>Fecha de Nacimiento</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="custom-form-field">
+        <mat-label>Usuario</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field class="custom-form-field">
+        <mat-label>Email</mat-label>
+        <input matInput type="email">
+      </mat-form-field>
+      <mat-form-field class="custom-form-field">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password">
+      </mat-form-field>
+        <mat-form-field class="custom-form-field">
+          <mat-label>Confirmar Contraseña</mat-label>
+          <input matInput type="password">
+      </mat-form-field>
+      <mat-form-field class="custom-form-field">
+        <mat-label>Tipo De Usuario</mat-label>
+        <mat-select>
+          <mat-option value="one">Candidato a Lider</mat-option>
+          <mat-option value="two">Evaluador</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <section color="primary" class="example-section">
+        <mat-checkbox color="primary" class="example-margin">Acepto las Politicas y Condiciones</mat-checkbox>
+      </section>
+      <mat-card-actions class="justify-end">
+        <button mat-button color="primary">Registrarse</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</body>

@@ -1,0 +1,49 @@
+body {
+  background: url('https://i.postimg.cc/02bM6xXx/Sin-t-tulo.png') no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.policy-card {
+  width: 100%;
+  max-width: 95%;
+  background-color: #f5f5f5b2;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.policy-dialog-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.policy-dialog-body {
+  margin-bottom: 20px;
+}
+
+.policy-dialog-body p {
+  margin-bottom: 10px;
+}
+
+.policy-dialog-body ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.policy-dialog-body li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.policy-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.policy-dialog-button {
+  margin-left: 10px;
+}
