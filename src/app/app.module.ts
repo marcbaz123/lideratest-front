@@ -20,7 +20,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatStepperModule} from '@angular/material/stepper';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
 
   declarations: [
@@ -29,6 +31,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     RegistroComponent,
     PoliticasComponent,
     InicioComponent
+
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatNativeDateModule,
     MatPaginatorModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],

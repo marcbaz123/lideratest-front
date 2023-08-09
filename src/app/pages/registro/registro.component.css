@@ -81,3 +81,10 @@ ul {
   list-style-type: none;
   margin-top: 4px;
 }
+.mat-stepper-vertical {
+  margin-top: 8px;
+}
+
+.mat-mdc-form-field {
+  margin-top: 16px;
+}
