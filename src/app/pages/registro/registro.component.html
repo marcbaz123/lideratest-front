@@ -17,6 +17,7 @@
       </mat-form-field>
       <mat-form-field class="custom-form-field">
         <mat-label>Usuario</mat-label>
+
         <input matInput>
       </mat-form-field>
       <mat-form-field class="custom-form-field">
@@ -45,25 +46,38 @@
         <button mat-button color="primary">Registrarse</button>
       </mat-card-actions>
     </mat-card>-->
-    <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
-      {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
-    </button>
     <mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
       <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="firstFormGroup">
-          <ng-template matStepLabel>Fill out your name</ng-template>
-          <mat-form-field>
-            <mat-label>Name</mat-label>
-            <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+          <ng-template matStepLabel>Complete los siguientes datos</ng-template>
+          <mat-form-field >
+            <mat-label>Nombre y Apellido</mat-label>
+            <input matInput placeholder="Campo vacio" formControlName="firstCtrl" required>
+          </mat-form-field>
+
+          <mat-form-field class="margin-left">
+            <mat-label>Correo Electronico</mat-label>
+            <input matInput type="email" placeholder="correo no valido" formControlName="firstCtrl" required>
           </mat-form-field>
           <div>
-            <button mat-button matStepperNext>Next</button>
+            <mat-form-field >
+              <mat-label>Contraseña</mat-label>
+              <input matInput type="password" placeholder="No valida" formControlName="firstCtrl" required>
+            </mat-form-field>
+
+            <mat-form-field class="margin-left">
+              <mat-label>Repetir Contraseña</mat-label>
+              <input matInput type="password" placeholder="No coincide" formControlName="firstCtrl" required>
+            </mat-form-field>
+          </div>
+          <div>
+            <button mat-button matStepperNext>Siguiente</button>
           </div>
         </form>
       </mat-step>
       <mat-step [stepControl]="secondFormGroup">
         <form [formGroup]="secondFormGroup">
-          <ng-template matStepLabel>Fill out your address</ng-template>
+          <ng-template matStepLabel>Fecha y empresa</ng-template>
           <mat-form-field>
             <mat-label>Address</mat-label>
             <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
