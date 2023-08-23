@@ -50,16 +50,27 @@
       <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="firstFormGroup">
           <ng-template matStepLabel>Complete los siguientes datos</ng-template>
-          <mat-form-field >
+          <mat-form-field>
             <mat-label>Nombre y Apellido</mat-label>
-            <input matInput placeholder="Campo vacio" formControlName="firstCtrl" required>
+            <input
+              matInput
+              placeholder="Campo vacio"
+              formControlName="firstCtrl"
+              required
+            />
           </mat-form-field>
 
           <mat-form-field class="margin-left">
             <mat-label>Correo Electronico</mat-label>
-            <input matInput type="email" placeholder="correo no valido" formControlName="firstCtrl" required>
+            <input
+              matInput
+              type="email"
+              placeholder="correo no valido"
+              formControlName="firstCtrl"
+              required
+            />
           </mat-form-field>
-          <div>
+          <!--<div>
             <mat-form-field >
               <mat-label>Contraseña</mat-label>
               <input matInput type="password" placeholder="No valida" formControlName="firstCtrl" required>
@@ -68,6 +79,18 @@
             <mat-form-field class="margin-left">
               <mat-label>Repetir Contraseña</mat-label>
               <input matInput type="password" placeholder="No coincide" formControlName="firstCtrl" required>
+            </mat-form-field>
+          </div>
+        -->
+          <div>
+            <mat-form-field>
+              <mat-label>Fecha de Nacimiento*</mat-label>
+              <input matInput [matDatepicker]="picker" />
+              <mat-datepicker-toggle
+                matIconSuffix
+                [for]="picker"
+              ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
           </div>
           <div>
@@ -80,16 +103,39 @@
           <ng-template matStepLabel>Fecha y empresa</ng-template>
           <mat-form-field>
             <mat-label>Usuario</mat-label>
-            <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-                   required>
+            <input
+              matInput
+              formControlName="secondCtrl"
+              placeholder="Usuario"
+              required
+            />
           </mat-form-field>
 
-          <mat-form-field class="margin-left">
-            <mat-label>Fecha de Nacimiento*</mat-label>
-            <input matInput [matDatepicker]="picker">
-            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
+          <div>
+            <mat-form-field>
+              <mat-label>Contraseña</mat-label>
+              <input
+                matInput
+                type="password"
+                formControlName="secondCtrl"
+                placeholder="No Valido"
+                required
+              />
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <mat-label>Repetir Contraseña</mat-label>
+              <input
+                matInput
+                type="password"
+                placeholder="No coincide"
+                formControlName="secondCtrl"
+                required
+              />
+            </mat-form-field>
+          </div>
+
           <div>
             <button mat-button matStepperNext>Siguiente</button>
           </div>
@@ -98,7 +144,7 @@
       <mat-step>
         <ng-template matStepLabel>Ultimo Paso</ng-template>
         <p>Al registrarse esta aceptando las Politicas y Condiciones</p>
-        <a href="">Politicas y Condiciones</a>
+        <a routerLink="/politicas">Políticas y Condiciones</a>
         <div>
           <button mat-button matStepperPrevious>Registrarse</button>
           <button mat-button (click)="stepper.reset()">Limpiar campos</button>

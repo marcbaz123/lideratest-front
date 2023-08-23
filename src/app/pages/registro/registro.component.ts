@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
@@ -14,6 +15,11 @@ export class RegistroComponent {
   });
   isLinear = false;
 
-  constructor(private _formBuilder: FormBuilder) {}
+
+  constructor(private _formBuilder: FormBuilder, private router: Router) {}
+
+  politicas() {
+    this.router.navigate(['/politicas']);
+  }
 }
 
