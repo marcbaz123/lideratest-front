@@ -23,6 +23,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatStepperModule} from '@angular/material/stepper';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 @NgModule({
 
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     LoginComponent,
     RegistroComponent,
     PoliticasComponent,
-    InicioComponent
+    InicioComponent,
+    PerfilComponent
 
   ],
   imports: [

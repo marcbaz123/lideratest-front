@@ -4,12 +4,14 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { PoliticasComponent } from './pages/politicas/politicas.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 const routes: Routes = [
 
   {path: 'login', component: LoginComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'politicas', component: PoliticasComponent},
   {path: 'inicio', component: InicioComponent},
+  {path: 'perfil', component: PerfilComponent},
   {path: '**' , redirectTo: 'login', pathMatch: 'full' },
   { path: '**', redirectTo: 'login' },
 ];

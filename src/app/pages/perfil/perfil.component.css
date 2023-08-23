@@ -1,0 +1,10 @@
+body {
+  background: url('https://i.postimg.cc/02bM6xXx/Sin-t-tulo.png') no-repeat center center fixed;
+  background-size: cover;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Cambia el valor alfa (0.7) según tus preferencias */
+}
