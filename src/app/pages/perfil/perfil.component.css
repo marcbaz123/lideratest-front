@@ -8,3 +8,16 @@ body {
 .mat-toolbar {
   background-color: rgba(0, 0, 0, 0.7); /* Cambia el valor alfa (0.7) según tus preferencias */
 }
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.example-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: transparent; /* Fondo completamente transparente */
+  border: none; /* Sin borde */
+}
